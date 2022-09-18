@@ -1,8 +1,14 @@
 import streamlit as st
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+import socket
 
 st.set_page_config(page_title="SOjaアンケート")
+
+host = socket.gethostname()
+st.write(host)
+ip = socket.gethostbyname(host)
+st.write(ip)
 
 def post_answer(dic_answers):
     db_url = st.secrets["db_url"]
