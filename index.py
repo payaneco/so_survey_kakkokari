@@ -20,15 +20,6 @@ dic_answers = {"userid":"",
                "events":"",
                "others":"",}
 
-import urllib.request
-url = 'https://api.ipify.org?format=json'
-
-req = urllib.request.Request(url)
-with urllib.request.urlopen(req) as res:
-    body = res.read()
-    st.write(body)
-
-
 st.title("スタック・オーバーフロー(SOja)のアンケート")
 st.write("プライバシーポリシー")
 st.caption("このアンケートの結果は匿名で開示されることがあります。")
