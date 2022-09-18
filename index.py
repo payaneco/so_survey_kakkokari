@@ -20,7 +20,6 @@ dic_answers = {"userid":"",
                "events":"",
                "others":"",}
 
-st.write(st.secrets["db_url"])
 st.title("スタック・オーバーフロー(SOja)のアンケート")
 st.write("プライバシーポリシー")
 st.caption("このアンケートの結果は匿名で開示されることがあります。")
