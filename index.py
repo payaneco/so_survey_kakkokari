@@ -21,10 +21,6 @@ dic_answers = {"userid":"",
                "others":"",}
 
 st.title("スタック・オーバーフロー(SOja)のアンケート")
-st.write("プライバシーポリシー")
-st.caption("このアンケートの結果は匿名で開示されることがあります。")
-st.caption("ユーザIDは不特定多数に開示されませんが、スタック・オーバーフローのスタッフおよびスタッフが認める特定のメンバーに共有されます。")
-st.caption("このサイト利用により受けた損害は一切保障しません。")
 st.header("アンケート")
 form = st.form("main-form")
 dic_answers["userid"] = form.text_input("ユーザID", value=dic_answers["userid"], placeholder="匿名可。ja.stackoverflow.comのユーザID(数値)", help="書いてくれたら抽選で豪華賞品が当たるかも？")
@@ -36,6 +32,10 @@ dic_answers["moderators"] = form.text_area("モデレータさんへ激励の言
 dic_answers["food"] = form.text_area("コーディング時の食べ物や飲み物", placeholder="本気出すときはエナドリ。普段は猫吸い。", help="")
 dic_answers["events"] = form.text_area("SOのイベントへの意見", placeholder="あのイベントもしたい、このイベントもしたい。もっともっとイベントしたい！")
 dic_answers["others"] = form.text_area("その他なんでも")
+form.write("プライバシーポリシー")
+form.caption("このアンケートの結果は匿名で開示されることがあります。")
+form.caption("ユーザIDは不特定多数に開示されませんが、スタック・オーバーフローのスタッフおよびスタッフが認める特定のメンバーに共有されます。")
+form.caption("このサイト利用により受けた損害は一切保障しません。")
 c = form.checkbox("プライバシーポリシーに同意する")
 submit = form.form_submit_button('投稿')
 
