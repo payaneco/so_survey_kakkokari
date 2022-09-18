@@ -31,7 +31,7 @@ dic_answers["benice"] = form.text_area("Be niceであるために心がけてる
 dic_answers["moderators"] = form.text_area("モデレータさんへ激励の言葉", help="普段は言う機会のないありがとうを書こう！")
 dic_answers["food"] = form.text_area("コーディング時の食べ物や飲み物", placeholder="本気出すときはエナドリ。普段は猫吸い。", help="")
 dic_answers["events"] = form.text_area("SOのイベントへの意見", placeholder="あのイベントもしたい、このイベントもしたい。もっともっとイベントしたい！")
-dic_answers["others"] = form.text_area("その他なんでも")
+dic_answers["others"] = form.text_area("その他なんでも", placeholder="正式版おめでとう。愛してるぜ！")
 form.write("プライバシーポリシー")
 form.caption("このアンケートの結果は匿名で開示されることがあります。")
 form.caption("ユーザIDは不特定多数に開示されませんが、スタック・オーバーフローのスタッフおよびスタッフが認める特定のメンバーに共有されます。")
