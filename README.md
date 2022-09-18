@@ -1,0 +1,2 @@
+# so_survey_kakkokari
+SOjaのご意見を集めるアンケートフォーム例
